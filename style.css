@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.signup-image-container {
+    flex: 0.33;
+    background-image: url(images/background_image2.jpg);
+    background-size: cover;
+    display: flex;
+}
+
+.image-credits {
+    align-self: flex-end;
+    width: 100%;
+    bottom: 15%;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 0.5vh;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+.signup-form {
+    flex: 0.66;
+    height: 100vh;
+}
