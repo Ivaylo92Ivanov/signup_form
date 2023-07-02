@@ -57,7 +57,12 @@ a {
     text-decoration: underline;
 }
 
+/* Right side */
+
 .right {
     flex: 3;
     height: 100vh;
+    background: linear-gradient(#b9c3cc, #bd8b62);
+    /* background: linear-gradient(#e66465, #9198e5); */
 }
+
