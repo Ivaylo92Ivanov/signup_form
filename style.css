@@ -1,15 +1,26 @@
+@font-face {
+    font-family: bebas;
+    src: url(fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: legend-peta;
+    src: url(fonts/Lexend_Peta/LexendPeta-VariableFont_wght.ttf);
+}
+
 *{
-    padding: 0;
-    margin: 0;
+    font-family: legend-peta;
 }
 
 body{
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
 }
 
 .left {
-    flex: 2;
+    flex: 2 ;
     display: flex;
     flex-direction: column;
     background-image: url(images/background_image2.jpg);
@@ -19,14 +30,14 @@ body{
 
 .logo-container {
     width: 100%;
-    height: 25vh;
-    background-color: rgb(0, 0, 0, 0.5);
-    position: relative;
-    top: 15%;
+    height: fit-content;
+    background-color: rgb(0, 0, 0, 0.3  );
+    margin-top: 15vh;
 
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-content: center;
 }
 
 .logo-container img {
@@ -35,11 +46,10 @@ body{
 }
 
 .logo-container h1 {
-    font-size: 4rem;
     color: white;
-    align-self: flex-end;
     margin-bottom: 3rem;
     opacity: 0.8;
+    align-self: center;
 }
 
 .image-credits {
@@ -60,9 +70,63 @@ a {
 /* Right side */
 
 .right {
+    display: flex;
+    flex-direction: column;
     flex: 3;
     height: 100vh;
     background: linear-gradient(#b9c3cc, #bd8b62);
     /* background: linear-gradient(#e66465, #9198e5); */
 }
 
+.right > ul {
+    margin-top: 15vh;
+    margin-right: 15vw;
+    
+}
+
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input > ul > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.form-input > ul {
+    background-color: rgba(232, 239, 178, 0.5);
+    box-shadow: 1px 7px 8px black;
+    padding-bottom: 18px;
+}
+
+li {
+    list-style: none;
+    
+}
+
+label {
+    display: block;
+}
+
+input {
+    min-width: 250px;
+}
+
+button[type="submit"] {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    width: 25%;
+    padding: 1rem;
+    margin-left: 1rem;
+    background-color: #8dafbc;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px black;
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.05);
+}
