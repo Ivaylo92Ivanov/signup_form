@@ -9,18 +9,11 @@
 <body>
     <div class="left">
         <div class="logo-container">
-            <img src="images/book1.png" alt="odin logo">
+            <img src="images/book.png" alt="odin logo">
             <h1>... got Books?</h1>
         </div>
         <div class="image-credits">
-            <p>
-                
-                <a 
-                target="_blank"
-                href="https://favpng.com"
-                >Photo by FAVpng</a>
-  
-            </p>
+            <a href='https://pngtree.com/so/Open'>Image from pngtree.com/</a>
         </div>
     </div>
     <div class="right">
@@ -43,38 +36,38 @@
                     <div>
                         <li>
                             <label for="fname">First name:</label>
-                            <input type="text" id="fname" name="fname" required>
+                            <input type="text" id="fname" name="fname" placeholder="John"  required>
                         </li>
                         <li>
                             <label for="lname">Last Name:</label>
-                            <input type="text" id="lname" name="lname" required>
+                            <input type="text" id="lname" name="lname" placeholder="Smith" required>
                         </li>
                     </div>
 
                     <div>
                         <li>
                             <label for="email">E-mail:</label>
-                            <input type="text" id="email" name="email" required>
+                            <input type="text" id="email" name="email" placeholder="j.smith@some.mail" required>
                         </li>
                         <li>
                             <label for="phone">Phone Number:</label>
-                            <input type="tel" id="phone" name="phone" required>
+                            <input type="tel" id="phone" name="phone" placeholder="+XXX-XXXX-XXXX" format="/^\d*$/" required>
                         </li>
                     </div>
                     <div>
                         <li>
                             <label for="pass1">Password:</label>
-                            <input type="text" id="pass1" name="pass1" required>
+                            <input type="password" id="pass1" name="pass1" minlength="8" placeholder="**********" required>
                         </li>
                         <li>
                             <label for="pass2">Confirm Password:</label>
-                            <input type="text" id="pass2" name="pass2" required>
+                            <input type="password" id="pass2" name="pass2" minlength="8" placeholder="**********" required>
                         </li>
                     </div>
                 </ul>
             
                 <button type="submit">Submit</button> 
-
+                <p>Already have an account? <a href="#">Log In</a></p>
             </div>    
         </form>
     </div>
