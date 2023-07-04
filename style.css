@@ -79,11 +79,9 @@ a {
 }
 
 .right > ul {
-    margin-top: 15vh;
+    margin-top: 10vh;
     margin-right: 15vw;
-    
 }
-
 
 .form-input {
     display: flex;
@@ -95,8 +93,6 @@ a {
     background-color: #ecc6a2;
     box-shadow: 1px 7px 8px black;
     padding-bottom: 18px;
-    /* box-shadow: -1px 7px 8px black; */
-    
 }
 
 .form-input > ul > div {
@@ -124,6 +120,10 @@ input::placeholder {
 
 input {
     min-width: 250px;
+    border-radius: 6px;
+    border:#8dafbc 2px solid;
+    height: 1.5rem;
+    
 }
 
 button[type="submit"] {
@@ -132,11 +132,21 @@ button[type="submit"] {
     width: 25%;
     padding: 1rem;
     margin-left: 45px;
-    background-color: #8dafbc;
+    background-color: #ecc6a2;
     border-radius: 12px;
     box-shadow: 2px 2px 5px black;
 }
 
-button[type="submit"]:hover {
+button[type="submit"]:active {
     transform: scale(1.02);
+    background-color: #8dafbc;
+    transition: 0.1s;
 }
+
+input[type="password"]:focus:invalid {
+    outline: 2px solid red;
+}
+
+
+
+
