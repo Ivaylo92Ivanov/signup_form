@@ -129,7 +129,7 @@ input {
 button[type="submit"] {
     margin-top: 1rem;
     font-size: 1.2rem;
-    width: 25%;
+    width: fit-content;
     padding: 1rem;
     margin-left: 45px;
     background-color: #ecc6a2;
