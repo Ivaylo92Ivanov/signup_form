@@ -154,3 +154,12 @@ input[type="password"]:focus:invalid {
 }
 
 
+.error {
+    color: rgb(255, 51, 51);
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: none;
+    overflow: hidden;
+    margin-top: 4px;
+    display: none;
+}
