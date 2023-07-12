@@ -111,6 +111,7 @@ li {
 
 label {
     display: block;
+    
 }
 
 input::placeholder {
@@ -123,7 +124,12 @@ input {
     border-radius: 6px;
     border:#8dafbc 2px solid;
     height: 1.5rem;
-    
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: #8dafbc 2px 2px 12px;
+}
+
+input[type="email"]:focus:invalid {
+    outline: 2px solid red;
 }
 
 button[type="submit"] {
@@ -146,7 +152,5 @@ button[type="submit"]:active {
 input[type="password"]:focus:invalid {
     outline: 2px solid red;
 }
-
-
 
 

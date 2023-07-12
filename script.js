@@ -6,7 +6,16 @@ function validatePassword() {
         alert("passwords do not match")
         return false
     } else {
-        alert("password is matching")
+        passwordSetOutline()
+        console.log("why not submit")
         return true
     }
+}
+
+function passwordSetOutline() {
+    let pass1 = document.querySelector("#pass1");
+    let pass2 = document.querySelector("#pass2");
+    pass1.style.outline = "3px solid green";
+    pass2.style.outline = "3px solid green";
+    return
 }
